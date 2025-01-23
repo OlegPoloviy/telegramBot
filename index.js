@@ -26,6 +26,10 @@ const start = () => {
             return bot.sendMessage(chatId, 'Your name is ' + message.from.first_name);
         }
 
+        if(text === '/game'){
+            await bot.sendMessage(chatId,`I will think about number 1 to 9,you need to guess it`)
+        }
+
         return bot.sendMessage(chatId,'I dont know what you want')
     })
 }
